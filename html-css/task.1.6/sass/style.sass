@@ -1,0 +1,71 @@
+@import "variables"
+
+body
+  margin: 0
+  font-family:'Roboto', sans-serif
+  line-height: 1.5
+.navbar 
+  position: fixed
+  min-width: 300px
+  height: 100%
+  color: $grey-color
+  border-right: solid
+  border-color: $black-color
+  overflow: scroll
+  ul
+    padding: 0
+  li
+    border-top: 1px solid
+    list-style: none
+    position: relative
+    width: 100%
+  a
+    display: block
+    padding: 10px 10px
+    color: $grey-color
+    text-decoration: none
+    cursor: pointer
+h1
+  color: $grey-color
+  margin: 10px
+  text-align: center
+  font-size: 1.8rem
+h2
+  margin: 0px
+  font-weight: 300
+.sub-link
+  text-indent: 35px
+  font-size: 0.9rem
+.main-doc 
+  margin-left: 310px
+  padding: 20px
+  article 
+    color: $grey-color
+    margin: 15px
+    font-size: 0.9rem
+  li 
+    margin: 15px 0px 0px 20px
+  code
+    display: block
+    background-color: $light-grey-color
+    padding: 15px
+    margin: 10px
+    border-radius: 5px
+@media only screen and (max-width: 600px)
+  .navbar
+    position: absolute
+    width: 100%
+    border-right: none
+    ul
+      border: 1px solid
+      height: 200px
+      overflow-y: auto
+      overflow-x: hidden
+  .main-doc
+    margin-left: 0px
+    margin-top: 270px
+    code
+      margin-left: -10px
+      width: 100%
+      padding: 15px
+      min-width: 200px

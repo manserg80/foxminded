@@ -1,0 +1,651 @@
+@import "fonts"
+@import "variables"
+// general settings
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Objective-Regular", sans-serif
+    &:before, &::after
+        box-sizing: border-box      
+a
+    text-decoration: none
+//intro section starts here
+.intro
+    width: 100%
+    height: 100%
+    min-height: 768px
+    background-image: linear-gradient($light-grey, $opac-white)
+    box-shadow: 0px 4px 16px $light-violet
+.intro-wrapper
+    width: 100%
+    max-width: 950px
+    margin: 0 auto
+#navigation-container
+    position: relative
+    top: 45px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    h1
+        font-family: "Objective-Bold", sans-serif
+        color: $light-blue
+        font-size: 2.5rem
+        line-height: 2.6rem
+    ul
+        display: flex
+        flex-direction: row
+        list-style-type: none
+    li
+        display: flex
+        align-items: center
+    a
+        color: black
+        font-size: 1.125rem
+        line-height: 1.19rem
+        padding: 0 55px
+        opacity: 0.7
+        cursor: auto
+    span:hover
+        color: $light-blue
+        cursor: pointer
+    .switcher
+        position: absolute
+        visibility: hidden
+        left: -9999
+label
+    font-size: 1.88rem
+    cursor: pointer
+    display: none
+.description-wrapper
+    position: absolute
+    display: flex
+    top: 158px
+.app-descritpion
+    width: 100%
+    max-width: 636px
+    display: flex
+    flex-direction: column
+.app-name
+    h2
+        padding-top: 75px
+        font-weight: 500
+        font-size: 3.125rem
+        line-height: 4.4rem
+    p
+        padding-top: 10px
+        font-size: 1.25rem
+        line-height: 2.25rem
+        color: $dark-violet
+.download-btn-top
+    padding-top: 60px
+    width: 100%
+    height: 60px
+    a
+        width: 180px
+        height: 60px
+        &:nth-child(1)
+            margin: 0 20px 0 0
+// profile-section starts here
+.profile
+    width: 100%
+    height: auto
+    min-height: 1475px
+    background-image: url(../img/design/blue-squares-profile.png), url(../img/design/brown-squares-profile.png)
+    background-repeat: no-repeat
+    background-position: top right, bottom left
+.profile-description
+    width: 100%
+    max-width: 950px
+    min-height: 1175px
+    margin: 0 auto
+    padding-top: 150px
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: 1fr
+    align-items: center
+    position: relative 
+    z-index: 1
+    h2
+        top: 918px
+        font-family: 'Objective-Regular'
+        font-style: normal
+        font-weight: 500
+        font-size: 2.25rem
+        line-height: 2.88rem
+        letter-spacing: 0.05rem
+        color: $dark-violet
+        margin-bottom: 170px
+.grid-1
+    grid-area: 1 / 1 / 2 / 2
+    display: flex
+    flex-direction: column
+    align-items: center
+.grid-2
+    grid-area: 1 / 2 / 2 / 3
+    display: flex
+    flex-direction: column
+    align-items: center
+.card-sizing
+    width: 380px
+    height: 525px
+    box-shadow: 0 4px 8px 0 $shadow-color
+    border-radius: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-content: space-between
+    &::before
+        content: ''
+        height: 154px
+        width: 154px
+        background-image: url(../img/design/dots.png)
+        position: absolute
+        top: 700px
+        z-index: -11
+.card-b
+    margin-bottom: 113px
+.card-text
+    width: 284px
+    height: 241px
+    margin: 56px 48px 48px 48px
+    h3
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 500
+        font-size: 1.25rem
+        line-height: 1.88rem
+        letter-spacing: 0.02rem
+        color: $dark-violet
+    p
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 400
+        font-size: 1rem
+        line-height: 1.63rem
+        color: $dark-violet
+        opacity: 0.6
+    a
+        margin-top: 62px
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 500
+        font-size: 0.88rem
+        line-height: 1.88rem
+        letter-spacing: 0.05rem
+        color: $light-blue
+        img
+            width: 13px
+            height: 13px
+            margin-left: 15px
+.images
+    width: 250px
+    height: 197px
+.titleCard
+    font-weight: 700
+    font-family: 'Objective-Regular', sans-serif
+    margin-top: 60px
+    font-size: 3.125rem
+// how-it-works section starts here
+.how-it-works
+    width: 100%
+    height: auto
+    min-height: 476px
+    background: $opac-blue
+.how-wrapper
+    max-width: 950px
+    height: 286px
+    margin: 0 auto
+    text-align: center
+    padding-top: 95px
+    h3
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 700
+        font-size: 1.62rem
+        line-height: 1.68rem
+        text-align: center
+        color: $light-blue
+.how-steps
+    display: flex
+    flex-direction: row
+    padding-top: 88px
+    img
+        width: 60px
+        height: 60px
+    h4
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 500
+        font-size: 1.3rem
+        line-height: 1.8rem
+        color: $dark-violet
+        padding: 30px 0 10px 0
+    p
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 400
+        font-size: 1rem
+        line-height: 1.63rem
+        color: $dark-violet
+// testimonials section starts here
+.testimonial-wrapper
+    width: 100%
+    height: auto
+    background-image: url(../img/design/dots.png)
+    background-repeat: no-repeat
+    background-position: center right
+    text-align: center
+.testimonials-header
+    h3
+        margin: 150px 0 10px 0
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 700
+        font-size: 1.63rem
+        line-height: 1.68rem
+        color: $dark-violet
+.testimonial
+    position: relative
+    width: 100%
+    max-width: 1195px
+    height: 597px
+    overflow: hidden
+    text-align: center
+.testimoniaL-slider
+    input
+        display: none
+.slide
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 450px
+    display: flex
+    align-items: center
+    left: 100%
+    z-index: 1
+    transition: left 0s .75s
+    background-color: $white-color
+.slider-image
+    position: relative
+    height: 400px
+    max-width: 677px
+    width: 100%
+    margin-right: 100px
+    display: flex
+    justify-content: center
+    background: $opac-blue
+    border-radius: 0px 6px 6px 0px
+    img
+        position: absolute
+        bottom: 0
+        width: 100%
+        max-width: 400px
+        height: auto
+        max-height: 500px
+.slider-text
+    width: 100%
+    max-width: 420px
+    text-align: left
+    p
+        font-family: 'Objective-Bold', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 1rem
+        line-height: 1.5rem
+        color: $dark-violet
+        opacity: 0.5
+        padding-top: 40px
+    h3
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 500
+        font-size: 1.13rem
+        line-height: 1.18rem
+        color: $dark-violet
+        margin-top: 40px
+    i
+        opacity: 0.5
+.slider-nav
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 10rem
+    height: 5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 3
+    box-shadow: 0px 4px 16px $shadow-color
+    border-radius: 4px
+    label
+        display: flex
+        justify-content: center
+        align-items: center
+.prev, .next
+    width: 10rem
+    height: 5rem
+    cursor: pointer
+    font-size: 1.5rem
+    color: $light-blue
+    border-radius: 5px
+    &:hover
+        color: $white-color
+        background-color: $light-blue
+
+[id^="slide"]:checked + .slide
+    left: 0
+    z-index: 2
+    transition: left .65s ease-out
+// download section starts here
+.download
+    width: 100%
+    height: auto
+    min-height: 700px
+    background-image: url(../img/design/blue-squares-download.png), url(../img/design/brown-squares-download.png)
+    background-repeat: no-repeat
+    background-position: bottom left, bottom right
+.download-app
+    width:100%
+    max-width: 1028px
+    height: 460px
+    margin: 0 auto
+    padding-top: 120px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+.download-img
+    width:100%
+    max-width: 515px
+    height: 460px
+    img
+        height: 100%
+        width: 100%
+.download-text
+    width: 100%
+    max-width: 445px
+    text-align: center
+    h3 
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 700
+        font-size: 1.56rem
+        line-height: 1.62rem
+        color: $dark-violet
+        padding-bottom: 16px
+    p
+        padding-bottom: 56px
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 400
+        font-size: 1.3rem
+        line-height: 1.5rem
+        text-align: center
+        color: $dark-violet
+        opacity: 0.5
+    a:nth-child(1)
+        margin: 0 20px 0 0
+// footer starts here
+footer
+    width: 100%
+    min-height: 350px
+    background: $light-blue
+    hr
+        border: none
+        height: 1px
+        background-color: $white-color
+.footer-wrapper
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    padding: 55px 125px 30px 125px
+    h1 
+        font-family: 'Objective-Bold', sans-serif
+        font-weight: 700
+        font-size: 2.12rem
+        line-height: 2.18rem
+        color: $white-color
+    h3
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 500
+        font-size: 1.125rem
+        line-height: 1.2rem
+        text-decoration: underline
+        text-underline-offset: .5rem
+        padding-bottom: 34px
+        color: $white-color
+    li
+        list-style-type: none
+        padding-bottom: 18px
+    a
+        font-family: 'Objective-Regular', sans-serif
+        font-size: 1rem
+        line-height: 1rem
+        color: $white-color
+.subscribe
+    width: 395px
+    height: 120px
+    p
+        font-family: 'Objective-Regular', sans-serif
+        font-size: 1.12rem
+        line-height: 1.63rem
+        color: $white-color
+    input
+        width: 260px
+        height: 50px
+        outline: none
+        border: none
+        border-radius: 3px
+        &::placeholder
+            text-indent: 10px
+            font-family: 'Objective-Regular', sans-serif
+            font-weight: 400
+            font-size: 1rem
+            line-height: 1rem
+            color: $black-color
+            opacity: 0.5
+    button
+        height: 50px
+        margin-left: 10px
+        padding: 0 17px 0 17px
+        border-radius: 3px
+        border: none
+        font-family: 'Objective-Regular', sans-serif
+        font-weight: 700
+        font-size: 1rem
+        line-height: 1rem
+        background: $white-color
+        color: $light-blue
+        cursor: pointer
+.footer-icons
+    padding: 15px 125px 15px 125px
+    display: flex
+    justify-content: space-between
+    align-content: center
+    p
+        font-family: 'Objective-Regular', sans-serif
+        font-size: 0.63rem
+        line-height: 0.68rem
+        color: $white-color
+.icons
+    width: 135px
+    height: 1rem
+    display: flex
+    justify-content: space-between
+@media screen and (max-width: 1200px)
+    .footer-wrapper
+        padding: 55px 15px 30px 15px
+@media screen and (max-width: 992px)
+    body
+        margin: 0 15px 0 15px
+    .descrption-wrapper
+        padding: 1%
+    .wrapper-phone
+        img
+            width: 100%
+            height: auto
+    .download-img
+        img
+            width: 100%
+            height: auto
+    .download-text
+        a:nth-child(1)
+            margin: 0
+    .footer-wrapper
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: 0.25fr 1fr 0.5fr
+        gap: 0px 0px
+        padding: 25px 10px 25px 10px
+    .footer-logo
+        grid-area: 1 / 1 / 2 / 4
+        display: flex
+        align-items: center
+        justify-content: center
+    .quick-links
+        grid-area: 2 / 1 / 3 / 2
+        display: flex
+        flex-direction: column
+        align-items: center
+    .others
+        grid-area: 2 / 2 / 3 / 3
+        display: flex
+        flex-direction: column
+        align-items: center
+    .products
+        grid-area: 2 / 3 / 3 / 4
+        display: flex
+        flex-direction: column
+        align-items: center
+    .subscribe
+        grid-area: 3 / 1 / 4 / 4
+        margin: 0 auto
+        padding-top: 20px
+@media screen and (max-width: 769px)
+    #navigation-container
+        nav
+            position: fixed
+            width: 60%
+            height: 20vh
+            right: -100%
+            top: 0
+            background: #fff
+            transition: 0.75s
+            border-radius: 10px
+            ul
+                height: 100%
+                padding: 15px 0
+                flex-direction: column
+                justify-content: space-between
+        .open, .close
+            display: block
+            padding: 10px
+        .fa-bars, .fa-times
+            color: $light-blue
+        .close 
+            position: absolute
+            top: 50px
+            right: 30px
+        .switcher:checked ~ nav
+            right: 0
+    .description-wrapper
+        padding: 0 25px
+    .wrapper-phone
+        img
+            display: none
+    .profile
+        background-image: none
+        h2
+            margin-bottom: 0
+    .profile-description
+        width: 100%
+        padding-top: 50px
+        display: flex
+        flex-direction: column
+        text-align: center
+    .card-b
+        margin-bottom: 0px
+    .card-sizing
+        &::before
+            display: none
+    .slider-image
+        display: none
+    .slider-text
+        margin-left: 100px
+    .testimonials-header 
+        h3
+            margin: 15px 0 15px 0
+    .download
+        min-height: auto
+        background-image: none
+        display: flex
+        flex-direction: column
+        align-items: center
+    .download-app
+        width: auto
+        padding-top: 50px
+    .download-img
+        width: 0
+        img
+            display: none
+    .footer-icons
+        padding: 15px 0 15px 0
+@media screen and (max-width: 481px)
+    .description-wrapper
+        top: 120px
+    .app-name
+        margin: 10px
+        h2
+            padding-top: 0
+            font-size: 2rem
+        p
+            font-size: 1.5rem
+    .download-btn-top
+        padding: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        a
+            &:nth-child(1)
+                margin: 0 0 15px 0
+    .how-it-works
+        padding: 0 15px
+        min-height: 400px
+    .how-wrapper
+        padding-top: 30px
+    .how-steps
+        padding-top: 50px
+        h4
+            font-family: 'Objective-Regular', sans-serif
+            font-weight: 800
+            font-size: 1.3rem
+            line-height: 1.3rem
+    .testimonials-header 
+        h3
+            margin: 15px 0 15px 0
+    .testimonial
+        height: 400px
+    .download
+        min-height: 0
+    .download-app
+        padding: 0
+    .download-btn-bottom
+        padding: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        a
+            &:nth-child(1)
+                margin: 0 0 15px 0
+    .subscribe
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-top: 0
+        input
+            width: 100%
+        button
+            width: 100%
+            margin: 10px 0 0 0
+    .footer-icons
+        padding: 5px 10px
+    .legal-info
+        p
+            display: flex
+            justify-content: center
+            align-items: center
+            line-height: 1rem

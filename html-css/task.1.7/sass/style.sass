@@ -1,0 +1,101 @@
+@import "variables"
+
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
+html, body
+  height: $slider-height
+  width: $slider-width
+  margin: 0
+  padding: 0
+  font-family: "Roboto", sans-serif
+.css-slider
+  height: $slider-height
+  width: $slider-width
+  position: relative
+  overflow: hidden
+  color: $white
+  text-align: center
+.slide-one
+  background-color: $dark-blue
+.slide-two
+  background-color: $grey-blue
+.slide-three
+  background-color: $light-blue
+.slide-four
+  background-color: $light-green
+label
+  cursor: pointer
+  display: inline-block
+.dots
+  position: absolute
+  bottom: 0
+  left: 0
+  z-index: 3
+  width: $slider-width
+  label
+    border: solid white
+    border-radius: 50%
+    width: 1vw
+    height: 1vw
+    margin: 20px 10px
+nav
+  position: absolute
+  top: 50%
+  margin-top: -42px
+  z-index: 3
+  width: $slider-width
+  label
+    font-size: 5rem
+.prev
+  position: absolute
+  left: 10px
+.next
+  position: absolute
+  right: 10px
+.slide
+  height: $slider-height
+  width: $slider-width
+  position: absolute
+  top: 0
+  left: 100%
+  z-index: 1
+  padding: 8em 0px
+  background-position: 50% 50%
+  background-size: cover
+  transition: left 0s .75s
+  .prev, .next
+    opacity: 0
+input
+  &#slide-1:checked ~ .dots label#slide-1, &#slide-2:checked ~ .dots label#slide-2, &#slide-3:checked ~ .dots label#slide-3, &#slide-4:checked ~ .dots label#slide-4
+    background: $white
+[id^="slide"]:checked + .slide
+  left: 0
+  z-index: 2
+  transition: left .65s ease-out
+  .prev, .next
+    opacity: 1
+    transition: all .5s .5s
+.slider-text
+  height: $slider-height
+  width: $slider-width
+  padding: 5%
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+@media (max-width: 800px)
+  .dots
+    label
+      width: 2vw
+      height: 2vw
+      margin: 20px 10px
+@media (max-width: 600px)
+  .dots
+    display: none
+  .slider-text
+    padding: 0 15%
+    h2
+      font-size: 2em
+    p
+      font-size: 1.2em

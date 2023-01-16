@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    background-color: orange;
+    flex: 1;
+}
+
+main {
+    flex: 3.5;
+}
+
+p {
+    margin: 0 1vw 0 1vw;
+}
+
+section {
+    background-color: pink;
+    flex: 1;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 78vh;
+}
+
+.wrapper h3 {
+    margin-left: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,66 @@
+@import "variables"
+
+body
+    margin: 0
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $black-color
+.wrapper
+    margin: 0
+    display: flex
+    align-items: center
+    overflow: hidden
+    height: 50vh
+    width: 50%
+.pacman
+    position: relative
+    background: transparent
+    z-index: 1
+    &::before, &::after
+        content: ''
+        position: absolute
+        top: -35px
+        display: block
+        border-radius: 50%
+        height: 0px
+        width: 0px
+    &::before
+        border: $pacman-size solid $yellow-color
+        border-left-color: transparent
+        border-bottom-color: transparent
+        animation: pacman-top $animation-time ease infinite
+    &::after
+        border: $pacman-size solid $yellow-color
+        border-top-color: transparent
+        border-right-color: transparent
+        animation: pacman-bottom $animation-time ease infinite
+.dots 
+    display: flex
+    justify-content: space-around
+    width: 100%
+    animation: dots-line $animation-time linear infinite
+    &::before 
+        content: ''
+        background-color: $white-color
+        height: $dots-size
+        width: $dots-size
+        border-radius: 50%
+@keyframes pacman-top
+    0%, 
+    100%
+        transform: rotate(-45deg)
+    50%
+        transform: rotate(-80deg)
+@keyframes pacman-bottom
+    0%, 
+    100%
+        transform: rotate(-40deg)
+    50%
+        transform: rotate(0deg)
+@keyframes dots-line
+    0%
+        transform: translateX(50%)
+    100%
+        transform: translateX(-50%)
