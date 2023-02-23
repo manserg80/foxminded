@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+    <body>
+
+        <form class="create-account-form" action="#" id="form" novalidate>
+            <div class="form-header">
+                <h1>Create Account</h1>
+            </div>
+            <div class="form-body">
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="firstName">First name*</label>
+                        <input type="text" id="first-name" name="firstName" required placeholder="enter your first name">
+                        <span id="first-name-error" class="error-message"></span>
+                    </div>
+                    <div class="form-input">
+                        <label>Last name*</label>
+                        <input type="text" id="last-name" name="lastName" required placeholder="enter your last name">
+                        <span class="error-message" id="last-name-error"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label>Email*</label>
+                        <input type="email" id="email" name="email" required placeholder="enter your email">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label>Password*</label>
+                        <input type="password" id="password" name="password" required placeholder="enter your password">
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <div class="form-input">
+                        <label>Confirm Password*</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" required placeholder="enter your password again">
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label>Gender</label>
+                        <div class="radio-inputs">
+                            <div>
+                                <label>
+                                    <input type="radio" name="gender">
+                                    Male
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="radio" name="gender">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label>Hobbies</label>
+                        <div class="checkbox-inputs">
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    Music
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    Sports
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    Travel
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="checkbox">
+                                    Movies
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label> Source of Income</label>
+                        <select>
+                            <option>Employed</option>
+                            <option>Self-Employed</option>
+                            <option>Unemployed</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label>Income</label>
+                        <div class="range-input">
+                            <input type="range" value="0" min="0" max="200" step="5" onchange="changeSliderValue(this.value)">
+                            <label id="income-label">0 K</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label>Upload Profile Picture</label>
+                        <input type="file">
+                    </div>
+                    <div class="form-input">
+                        <label>Age</label>
+                        <input type="number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <label>Bio</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-input">
+                        <input type="text" id="date" name="date" placeholder="enter submission date" required>
+                        <span class="error-message" id="date-error"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-footer">
+                <button class="btn" id="submit">Create</button>
+            </div>
+        </form>
+
+        <script src="js/script.js"></script>
+
+    </body>
+
+</html>

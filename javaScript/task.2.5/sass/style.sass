@@ -1,0 +1,107 @@
+@import _variables
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	font-family: "Poppins", sans-serif
+body
+	height: 100vh
+	color: $white
+	background: linear-gradient(135deg, $blue-1, $blue-2)
+.wrapper
+	font-size: 16px
+	width: 90vw
+	max-width: 28em
+	position: absolute
+	transform: translate(-50%, -50%)
+	top: 50%
+	left: 50%
+.container
+	width: 100%
+	background: $transp-white-2
+	backdrop-filter: blur(10px)
+	padding: 3em 1.8em
+	border: 2px solid $transp-white-2
+	border-radius: 0.6em
+	box-shadow: 0 1.8em 3.7em $shadow
+	text-align: center
+.shape
+	position: absolute
+	background-color: $transp-white-1
+	backdrop-filter: blur(1.2em)
+	border: 2px solid $transp-white-2
+	border-radius: 50%
+	&-1
+		height: 13em
+		width: 13em
+		right: -6.5em
+		top: 1.8em
+	&-2
+		height: 11em
+		width: 11em
+		bottom: -3.7em
+		left: -2.5em
+.search-container
+	font-size: 1em
+	display: grid
+	grid-template-columns: 9fr 3fr
+	gap: 1.25em
+	input, button
+		outline: none
+		font-size: 1em
+		border: none
+	input
+		padding: 0.7em
+		background-color: transparent
+		border-bottom: 2px solid $transp-white-1
+		color: $white
+		font-weight: 300
+		&::placeholder
+			color: $off-white
+		&:focus
+			border-color: $white
+	button
+		color: $blue-2
+		background-color: $white
+		border-radius: 0.3em
+h1,  h2, h3, h4
+	margin: 0.2em
+	letter-spacing: 0.1em
+h1
+	font-size: 2em
+	font-weight: 400
+h2
+	text-transform: uppercase
+.weather-data
+	color: $white
+	text-transform: uppercase
+	letter-spacing: 0.2em
+	font-size: 0.9em
+	font-weight: 500
+	line-height: 2em
+.weather 
+	margin-top: -0.7em
+img
+	margin: 0.6em 0 0 0
+	width: 3em
+.temp-container
+	display: flex
+	justify-content: center
+	div
+		padding: 0.3em 1em
+		&:first-child
+			border-right: 1px solid $transp-white-1
+	.title 
+		font-weight: 600
+	.temp 
+		font-weight: 300
+.day-forecast
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	text-align: start
+.forecast
+	display: flex
+	justify-content: center
+	align-content: center
+	flex-direction: column
