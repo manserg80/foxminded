@@ -9,7 +9,7 @@ const getIconUrl = iconCode => `https://openweathermap.org/img/w/${iconCode}.png
 searchBtn.addEventListener("click", function() {
   const location = searchInput.value;
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=f3ee347f30e6a8f4477cce6f410b31e5&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid="yourKey"&units=metric`)
     .then(response => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -50,7 +50,7 @@ searchBtn.addEventListener("click", function() {
       console.error("Error fetching weather data:", error);
     });
 
-  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=f3ee347f30e6a8f4477cce6f410b31e5&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid="yourKey"&units=metric`)
     .then(response => {
       if (!response.ok) {
         throw new Error("Network problem, please check your connection!");
