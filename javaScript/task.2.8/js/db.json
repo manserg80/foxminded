@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "company": "ikea",
+        "image": "./images/products/high-back-bench.jpeg",
+        "price": 10,
+        "name": "high-back bench",
+        "featured": true
+    
+    },
+    {
+        "id": 2,
+        "company": "marcos",
+        "image": "./images/products/albany-table.jpeg",
+        "price": 80,
+        "name": "albany Table",
+        "featured": true
+    },
+    {
+        "id": 3,
+        "company": "caressa",
+        "image": "./images/products/accent-chair.jpeg",
+        "price": 19,
+        "name": "accent Chair",
+        "featured": true
+    },
+    {
+        "id": 4,
+        "company": "caressa",
+        "image": "./images/products/wooden-table.jpeg",
+        "price": 13,
+        "name": "wooden table",
+        "featured": false
+    },
+    {
+        "id": 5,
+        "company": "caressa",
+        "image": "./images/products/dining-table.jpeg",
+        "price": 45,
+        "name": "dining table",
+        "featured": false
+},
+    {
+        "id": 6,
+        "company": "liddy",
+        "image": "./images/products/sofa-set.jpeg",
+        "price": 90,
+        "name": "sofa set",
+        "featured": false
+    },
+    {
+        "id": 7,
+        "company": "marcos",
+        "image": "./images/products/modern-bookshelf.jpeg",
+        "price": 35,
+        "name": "modern bookshelf",
+        "featured": false
+    },
+    {
+        "id": 8,
+        "company": "liddy",
+        "image": "./images/products/emperor-bed.jpeg",
+        "price": 58,
+        "name": "emperor bed",
+        "featured": false
+    },
+    {
+        "id": 9,
+        "company": "marcos",
+        "image": "./images/products/utopia-sofa.jpeg",
+        "price": 73,
+        "name": "utopia sofa",
+        "featured": false
+    },
+    {
+        "id": 10,
+        "company": "liddy",
+        "image": "./images/products/entertainment-center.jpeg",
+        "price": 39,
+        "name": "entertainment center",
+        "featured": false
+    },
+    {
+        "id": 11,
+        "company": "ikea",
+        "image": "./images/products/albany-sectional.jpeg",
+        "price": 86,
+        "name": "albany sectional",
+        "featured": false
+    },
+    {
+        "id": 12,
+        "company": "liddy",
+        "image": "./images/products/leather-sofa.jpeg",
+        "price": 27,
+        "name": "leather sofa",
+        "featured": false
+    }
+]

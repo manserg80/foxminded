@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Comfy</title>
+    <script src="https://kit.fontawesome.com/03289e8465.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <nav class="navbar page">
+      <div class="nav-center">
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link">
+                home
+              </a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link">
+                products
+              </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">
+                about
+              </a>
+            </li>
+          </ul>
+        </div>
+        <img src="./images/logo/logo-black.png" class="nav-logo" alt="logo" />
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">0</span>
+        </div>
+      </div>
+    </nav>
+    <section class="page-hero">
+      <div class="section-center">
+        <h3 class="page-hero-title">Home / Products</h3>
+      </div>
+    </section>
+    <div class="sidebar-overlay">
+      <aside class="sidebar">
+        <button class="sidebar-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              home
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              products
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              about
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">your bag</h3>
+        </header>
+        <div class="cart-items"></div>
+        <footer>
+          <h3 class="cart-total text-slanted"> Total :
+          </h3>
+          <button class="cart-checkout btn">checkout</button>
+        </footer>
+      </aside>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>Thank you for your purchases!</h1>
+      <p>
+          Our team will get in touch with you as soon as possible!
+      </p>
+    </div>
+  <div class="overlay hidden"></div>
+    <section class="products">
+      <div class="filters">
+        <div class="filters-container">
+          <form class="input-form">
+            <input type="text" class="search-input" placeholder="search..." />
+          </form>
+          <h4>Company</h4>
+          <article class="companies">
+          </article>
+          <h4>Price</h4>
+          <form class="price-form">
+            <input
+              type="range"
+              class="price-filter"
+              min="0"
+              value="50"
+              max="100"
+            />
+          </form>
+          <p class="price-value"></p>
+        </div>
+      </div>
+      <div class="products-container"></div>
+    </section>
+    <div class="page-loading">
+      <h2>Loading...</h2>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

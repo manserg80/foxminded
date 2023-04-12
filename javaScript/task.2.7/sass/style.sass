@@ -1,0 +1,126 @@
+@import variables
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+body
+    font-family: Roboto, sans-serif
+    background-color: $white-color
+    color: $dark-theme-color
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 20px
+    background-color: $white-color
+    box-shadow: 0 2px 4px $black-shadow
+h1
+    font-size: 24px
+button
+    border: none
+    background-color: $black-color
+    color: $white-color
+    padding: 10px 20px
+    border-radius: 5px
+    cursor: pointer
+    &:hover
+        background-color: $grey-color
+main
+    max-width: 900px
+    margin: 0 auto
+    padding: 20px
+#search-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+#search-input
+    padding: 10px
+    border-radius: 5px
+    border: none
+    box-shadow: 0 2px 4px $black-shadow
+    width: 70%
+#region-select
+    padding: 10px
+    border-radius: 5px
+    border: none
+    box-shadow: 0 2px 4px $black-shadow
+    width: 25%
+#countries-container
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px))
+    grid-gap: 20px
+    align-items: center
+    justify-content: center
+.country-card
+    background-color: $white-color
+    padding: 20px 20px 10px 20px
+    border-radius: 5px
+    box-shadow: 0 2px
+    h2
+        font-size: 20px
+        margin: 10px 0 10px 0
+    p
+        font-size: 1rem
+        margin-bottom: 5px
+    img
+        width: 100%
+        height: 150px
+        box-shadow: 2px 2px 2px 2px $black-shadow
+#loader
+    display: none
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    div
+        display: inline-block
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background-color: $grey-color
+        margin: 0 5px
+        animation: loader-anim 0.8s ease-in-out infinite
+        &:nth-child(1)
+            animation-delay: 0s
+        &:nth-child(2)
+            animation-delay: 0.1s
+        &:nth-child(3)
+            animation-delay: 0.2s
+        &:nth-child(4)
+            animation-delay: 0.3s
+        &:nth-child(5)
+            animation-delay: 0.4s
+        &:nth-child(6)
+            animation-delay: 0.5s
+        &:nth-child(7)
+            animation-delay: 0.6s
+        &:nth-child(8)
+            animation-delay: 0.7s
+@keyframes loader-anim
+    0%
+        transform: scale(0)
+    50%
+        transform: scale(1)
+    100%
+        transform: scale(0)
+.dark-mode
+    background-color: $dark-theme-color
+    color: $white-color
+    header
+        background-color: $dark-theme-color
+        color: $white-color
+    button
+        background-color: $white-color
+        color: $dark-theme-color
+        &:hover
+            background-color:$grey-color
+    #search-input
+        background-color: $dark-theme-color
+        color: $white-color
+    #region-select
+        background-color: $dark-theme-color
+        color: $white-color
+    .country-card
+        background-color: $dark-theme-color
+        color: $white-color
