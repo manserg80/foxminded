@@ -1,0 +1,22 @@
+.user-details {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.user-deatils-row {
+    margin-bottom: 1rem;
+}
+
+.user-deatils-row p {
+    padding: 0;
+}
+
+.icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: rgb(43, 96, 135);
+}
+span {
+    color: rgb(117, 116, 116);
+    font-size: 1rem;
+}
