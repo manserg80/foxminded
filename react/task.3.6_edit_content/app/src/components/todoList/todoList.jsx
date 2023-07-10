@@ -47,7 +47,7 @@ const TodoList = () => {
       title: newTodoTitle,
       completed: false,
     };
-    setTodos([newTodo, ...todos]); // Prepend the new todo
+    setTodos([newTodo, ...todos]);
     localStorage.setItem('todos', JSON.stringify([newTodo, ...todos]));
     setShowAddForm(false);
     setNewTodoTitle('');
